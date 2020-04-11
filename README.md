@@ -46,6 +46,7 @@ Example Playbook
             - "foobar.com"
           resolv_options:
             - "timeout:2"
+            - "rotate"
 ```
 
 License
