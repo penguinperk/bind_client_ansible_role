@@ -1,2 +1,7 @@
 ---
 # defaults file for bind_client_ansible_role
+resolv_nameservers: []
+resolv_domain: ""
+resolv_search: []
+resolv_sortlist: []
+resolv_options: []

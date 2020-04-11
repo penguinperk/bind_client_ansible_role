@@ -1,7 +1,10 @@
+
+An Ansible role to configure /etc/resolv.conf
+
 Role Name
 =========
 
-A brief description of the role goes here.
+An Ansible role that consigures DNS Resolver (resolv.conf)
 
 Requirements
 ------------
@@ -11,7 +14,17 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+
+## Role Variables
+### Defaults
+| Variable Name | Required | Description | Default Value | Type |
+| --- | :---: | --- | :---: | :---: |
+|resolv_nameservers| yes | A list of up to 3 nameserver IP addresses | [] | list |
+| resolv_domain | no | Local domain name | "" | string |
+| resolv_search | no | List of up to 6 domains to search for host-name lookup | [] | list |
+| resolv_sortlist | no | List of IP-address and netmask pairs to sort addresses returned by gethostbyname. | [] | list |
+| resolv_options | no | List of options to modify certain internal resolver variables. | [] | list |
+
 
 Dependencies
 ------------
@@ -21,11 +34,22 @@ A list of other roles hosted on Galaxy should go here, plus any details in regar
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
+## Example Playbooks
+### Role Invocation
+```yaml
+    - name: "Role Invocation - ahuffman.resolv Example"
+      hosts: "all"
       roles:
-         - { role: username.rolename, x: 42 }
+        - role: "ahuffman.resolv"
+          resolv_nameservers:
+            - "8.8.8.8"
+            - "8.8.4.4"
+          resolv_domain: "foo.org"
+          resolv_search:
+            - "foo.bar"
+            - "foobar.com"
+          resolv_options:
+            - "timeout:2"
 
 License
 -------
