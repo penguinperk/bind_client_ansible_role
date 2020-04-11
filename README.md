@@ -56,4 +56,9 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Mischa ter Smitten
+
+#### Feedback, bug-reports, requests, ...
+
+[Submit](https://github.com/penguinperk/bind_client_ansible_role/issues)!
+
