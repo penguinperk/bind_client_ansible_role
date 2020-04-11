@@ -60,5 +60,5 @@ Mischa ter Smitten
 
 #### Feedback, bug-reports, requests, ...
 
-[Submit](https://github.com/penguinperk/bind_client_ansible_role/issues)!
+[Submit](https://github.com/penguinperk/bind_client_ansible_role/issues)
 
