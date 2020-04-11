@@ -1,10 +1,9 @@
 
-An Ansible role to configure /etc/resolv.conf
 
 Role Name
 =========
 
-An Ansible role that consigures DNS Resolver (resolv.conf)
+An Ansible role that configure the  DNS Resolver (resolv.conf)
 
 Requirements
 ------------
