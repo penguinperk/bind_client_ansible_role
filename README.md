@@ -14,8 +14,6 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-
-## Role Variables
 ### Defaults
 | Variable Name | Required | Description | Default Value | Type |
 | --- | :---: | --- | :---: | :---: |
@@ -34,7 +32,6 @@ A list of other roles hosted on Galaxy should go here, plus any details in regar
 Example Playbook
 ----------------
 
-## Example Playbooks
 ### Role Invocation
 ```yaml
     - name: "Role Invocation - ahuffman.resolv Example"
@@ -50,6 +47,7 @@ Example Playbook
             - "foobar.com"
           resolv_options:
             - "timeout:2"
+```
 
 License
 -------
