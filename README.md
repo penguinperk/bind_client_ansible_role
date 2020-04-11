@@ -56,7 +56,7 @@ BSD
 Author Information
 ------------------
 
-Mischa ter Smitten
+PenguinPerk
 
 #### Feedback, bug-reports, requests, ...
 
