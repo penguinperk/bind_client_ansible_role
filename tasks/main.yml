@@ -1,8 +1,8 @@
 ---
 # tasks file for bind_client_ansible_role
 - name: "Configure resolv.conf"
-    template:
-      src: "resolv.conf.j2"
-      dest: "/etc/resolv.conf"
-      mode: "0644"
+  template:
+    src: "resolv.conf.j2"
+    dest: "/etc/resolv.conf"
+    mode: "0644"
   become: True
